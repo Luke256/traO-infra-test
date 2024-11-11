@@ -1,3 +1,4 @@
 ### requirements for testing
 
 matplotlib==3.8.0
+tqdm==4.67.0

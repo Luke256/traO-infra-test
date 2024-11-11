@@ -1,7 +1,7 @@
 from exec_cpp import exec_cpp
 from plot_times import plot_times
 
-MX_LOGS = [1,2,3,4,5,6,7,8,9,10]
+MX_LOGS = [1,2,4,8,16]
 
 def run_test():
     results = {}
