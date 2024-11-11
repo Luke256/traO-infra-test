@@ -6,7 +6,7 @@ from config import WEBHOOK_ID, WEBHOOK_SECRET
 def send2traq(message):
     m = hmac.new(
         WEBHOOK_SECRET.encode(),
-        message.encode('uff-8'),
+        message.encode('utf-8'),
         hashlib.sha1
     )
 
