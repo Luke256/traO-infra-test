@@ -1,12 +1,13 @@
 import subprocess
 import time
 import tqdm
+from config import ITERATIONS
 
 def exec_cpp(mx_log):
     subprocess.run(["g++", "main.cpp", "-o", "main", "-D", f"MX_LOG={mx_log}"])
     
     times = []
-    for _ in tqdm.tqdm(range(500)):
+    for _ in tqdm.tqdm(range(ITERATIONS)):
         start = time.perf_counter()
         subprocess.run(["./main"], stdout=subprocess.DEVNULL)
         end = time.perf_counter()

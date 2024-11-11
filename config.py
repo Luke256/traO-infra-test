@@ -1,0 +1,7 @@
+MX_LOGS = [1,2,4,8,16,24]
+ITERATIONS = 10
+WEBHOOK_ID = "01910c7f-48bf-7d9c-add8-1d8ceec86e36"
+
+
+WEBHOOK_SECRET = ""
+TEST_NAME = ""
