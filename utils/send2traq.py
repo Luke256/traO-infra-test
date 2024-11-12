@@ -19,4 +19,4 @@ def send2traq(message):
 
     url = f"https://q.trap.jp/api/v3/webhooks/{WEBHOOK_ID}"
 
-    res = requests.post(url, headers=headers, data=message)
+    res = requests.post(url, headers=headers, data=message.encode('utf-8'))
